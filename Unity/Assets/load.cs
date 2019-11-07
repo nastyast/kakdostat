@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class load : MonoBehaviour
 {
@@ -26,7 +27,8 @@ slidV += 7;
 timer =0;
 }
 if (slider.value >= 100) {
-            Application.LoadLevel(Level);
+           SceneManager.LoadScene(1);
         }
+
     }
 }
